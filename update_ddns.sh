@@ -30,7 +30,7 @@ if [ $UPDATE_DNS == 1 ]; then
     echo -e "\t New IPV4: $CURRENT_IPV4" >>~/.ddns/log
     echo -e "\t New IPV6: $CURRENT_IPV6" >>~/.ddns/log
     echo "" >>~/.ddns/log
-    cat >>~/.ddns/state <<EOT
+    cat >~/.ddns/state <<EOT
 OLD_IPV4=$CURRENT_IPV4
 OLD_IPV6=$CURRENT_IPV6
 EOT
